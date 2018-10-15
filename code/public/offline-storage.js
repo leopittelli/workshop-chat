@@ -1,0 +1,3 @@
+const offlineStorage = (function() {
+
+})();

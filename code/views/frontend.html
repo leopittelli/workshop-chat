@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Chat</title>
+        <link rel="stylesheet" href="/public/styles.css">
+    </head>
+    <body>
+
+        <h1 class="title">Web Chat</h1>
+        <div class="wrapper">
+            <nav class="nav" id="nav">
+                <div class="default-nav">
+                    <div class="main-nav">
+                        <div class="main-nav-item"><a class="main-nav-item-link" href="#" id="main-title">Esperando nombre ...</a></div>
+                    </div>
+                </div>
+            </nav>
+            <div class="inner" id="inner">
+                <div class="content" id="content"></div>
+            </div>
+            <div class="bottom" id="bottom">
+                <div class="action-bar">
+                    <canvas id="audio-visualizer"></canvas>
+                    <div class="send infinite pulse" id="send-audio"></div>
+                    <div class="send infinite pulse" id="speech"></div>
+                    <div class="send" id="send-image"></div>
+                </div>
+                <div class="text-wrapper">
+                    <textarea class="input" id="input"></textarea>
+                    <div class="send" id="send"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="send-image-modal">
+            <button class="close">X</button>
+            <video id="video" autoplay></video>
+            <canvas id="canvas"></canvas>
+            <button class="button" id="take-picture">Tomar foto</button>
+            <button class="button" id="apply-filter">Aplicar filtro</button>
+        </div>
+
+        <canvas id="canvas-shape" width="640" height="480"></canvas>
+
+        <script src="/public/chat-frontend.js"></script>
+        <script src="/public/offline-storage.js"></script>
+        <script src="/public/capture-image.js"></script>
+        <script src="/public/wasm.js"></script>
+        <script src="/public/capture-audio.js"></script>
+        <script src="/public/speech-recognition.js"></script>
+        <script src="/public/speech-synthesis.js"></script>
+        <script src="/public/shape-detection.js"></script>
+        <script src="/public/pip.js"></script>
+
+    </body>
+</html>

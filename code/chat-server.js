@@ -86,7 +86,7 @@ wsServer.on('request', function(request) {
                 console.log((new Date()) + ' Usuario conocido como: ' + userName);
 
             } else { // Guardamos el mensaje y se lo mandamos a todos los usuarios
-                console.log((new Date()) + ' Mensaje recibido de: ' + userName + ': ' + messageData);
+                console.log((new Date()) + ' Mensaje recibido de: ' + userName + ': ' + JSON.stringify(messageData));
 
                 const obj = {
                     time: (new Date()).getTime(),
@@ -122,7 +122,7 @@ wsServer.on('request', function(request) {
     // Se desconecta el usuario
     connection.on('close', function(connection) {
         if (userName !== false) {
-            console.log((new Date()) + " Usuario " + connection.remoteAddress + " desconectado.");
+            console.log((new Date()) + " Usuario " + connection + " desconectado.");
             // Lo removemos de la lista de usuarios conectados
             clients.splice(index, 1);
         }

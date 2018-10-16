@@ -15,7 +15,7 @@ Por detrás, lo que haremos será:
 1. Al guardar el archivo con éxito, mandaremos un mensaje de tipo audio con la url del mismo a todos los usuarios conectados.
 1. Al recibir el mensaje de tipo audio, mostraremos un reproductor para poder escucharlo.
 
-![Demo UI](./images/capture-audio.gif "Demo UI")
+![Demo UI](images/capture-audio.gif "Demo UI")
 
 _Demo UI_
 
@@ -227,3 +227,8 @@ function visualize(stream) {
     }
 }
 ```
+
+## Listo!
+Ahora toca probar lo que hicimos. Enviemos un audio y probemos reproducirlo!
+
+ 

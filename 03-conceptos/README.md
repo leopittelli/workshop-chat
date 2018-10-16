@@ -39,7 +39,6 @@ Los polyfills permiten usar una API sin la necesidad de que esté soportada en t
 
 Generalmente, chequean si el browser soporta la API y la usan si está disponible. Si no, usan su propia implementación.
 
-
 ## Closures
 
 Un closure es la combinación de una función y el ámbito en el que se declaró dicha función.
@@ -71,6 +70,25 @@ MyLibrary = (function () {
   }
 }());
 ```
+
+## Promesas
+
+El objeto `Promise` (Promesa) es usado para computaciones asíncronas. Una promesa representa un valor que puede estar disponible ahora, en el futuro, o nunca.
+
+La sintaxis es la siguiente.
+
+```js
+new Promise( function(resolver, rechazar) { ... } );
+```
+
+El parámetro es una función con los argumentos resolver y rechazar. Las funciones resolver y rechazar, al ser llamadas, resuelven o rechazan la promesa, respectivamente. Normalmente el ejecutor inicia un trabajo asíncrono, y luego, una vez que es completado, llama a la función resolver para resolver la promesa o la rechaza si ha ocurrido un error.
+Si un error es lanzado en la función ejecutor, la promesa es rechazada y el valor de retorno del ejecutor es rechazado.
+
+## Fetch
+
+La `API Fetch` proporciona una interfaz para recuperar recursos (incluyendo recursos remotos a través de redes). Le resultará familiar a cualquiera que haya usado `XMLHttpRequest`, pero esta nueva API ofrece un conjunto de características más potente y flexible.
+
+`Fetch` ofrece una definición genérica de los objetos `Request` y `Response`.
 
 ## WebSockets
 

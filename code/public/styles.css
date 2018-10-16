@@ -177,10 +177,10 @@ body {
     background: url(/public/icons/send.svg) no-repeat center center;
 }
 .bottom #speech:before {
-    background: url(/public/icons/mic.svg) no-repeat center center;
+    background: url(/public/icons/record.svg) no-repeat center center;
 }
 .bottom #send-audio:before {
-    background: url(/public/icons/record.svg) no-repeat center center;
+    background: url(/public/icons/mic.svg) no-repeat center center;
 }
 .bottom #send-image:before {
     background: url(/public/icons/camera.svg) no-repeat center center;

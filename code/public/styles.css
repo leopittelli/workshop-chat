@@ -502,13 +502,16 @@ body {
     width: 100%;
 }
 .modal .close {
+    border: none;
     font-size: 20px;
     height: 40px;
     line-height: 40px;
     right: 0;
     position: absolute;
     top: 0;
+    -webkit-appearance: none;
     width: 40px;
+    z-index: 999;
 }
 
 #send-image-modal {

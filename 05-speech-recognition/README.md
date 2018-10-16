@@ -18,9 +18,11 @@ La interfaz de `SpeechRecognition` de la `Web Speech API` es la interfaz que con
 
 ## Implementación
 
-Vamos a empezar a modificar el archivo **speech-recognition.js**. En esta primera parte del código:
+Vamos a empezar a modificar el archivo **speech-recognition.js**.
 
 ### Definición
+
+En esta primera parte del código:
 
 1. Accedemos a la API, actualmente solo disponible en chrome bajo el prefijo `webkit`.
 1. Instanciamos la API.

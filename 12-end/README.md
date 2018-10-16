@@ -2,6 +2,7 @@
 
 ## Otras ideas
 WebRTC
+Más filtros de imagen, stickers, marcos.
 
 
 ## Referencias

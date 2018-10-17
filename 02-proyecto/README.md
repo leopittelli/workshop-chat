@@ -112,7 +112,7 @@ Ahora, vamos a comenzar a revisar el proyecto mirando el código.
     1. Definimos algunas variables globales al módulo e inicializamos las referencias a los elementos del DOM que necesitaremos.
         ```js
            let connection;
-           let conectionError = false;
+           let connectionError = false;
            let myName = false;
            const content = document.getElementById('content');
            const inner = document.getElementById('inner');

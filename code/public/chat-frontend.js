@@ -1,6 +1,6 @@
 const chat = (function () {
     let connection;
-    let conectionError = false;
+    let connectionError = false;
     let myName = false;
     const content = document.getElementById('content');
     const inner = document.getElementById('inner');
@@ -57,7 +57,7 @@ const chat = (function () {
                 message.url = message.text;
             }
 
-            if (conectionError) {
+            if (connectionError) {
                 offlineStorage.save(message);
             } else {
                 connection.send(JSON.stringify(message));
@@ -161,10 +161,10 @@ const chat = (function () {
 
         setInterval(function() {
             if (connection.readyState !== 1) {
-                if (!conectionError) notify('Error de conexión');
-                conectionError = true;
+                if (!connectionError) notify('Error de conexión');
+                connectionError = true;
             } else {
-                conectionError = false;
+                connectionError = false;
             }
         }, 3000);
     }

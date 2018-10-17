@@ -84,6 +84,42 @@ new Promise( function(resolver, rechazar) { ... } );
 El parámetro es una función con los argumentos resolver y rechazar. Las funciones resolver y rechazar, al ser llamadas, resuelven o rechazan la promesa, respectivamente. Normalmente el ejecutor inicia un trabajo asíncrono, y luego, una vez que es completado, llama a la función resolver para resolver la promesa o la rechaza si ha ocurrido un error.
 Si un error es lanzado en la función ejecutor, la promesa es rechazada y el valor de retorno del ejecutor es rechazado.
 
+## Async / Await
+
+La finalidad de las funciones `async/await` es simplificar el comportamiento del uso síncrono de `Promises` y realizar algún comportamiento específico en un grupo de `Promises`.
+
+Cuando se llama a una función `async`, esta devuelve un elemento `Promise`. Una función `async` puede contener una expresión `await`, la cual pausa la ejecución de la función asíncrona y espera la resolución de la `Promise` pasada y, a continuación, reanuda la ejecución de la función `async` y devuelve el valor resuelto.
+
+### Ejemplo
+
+Una API que devuelva una `Promise` tendrá como resultado una cadena de promesas, y dividirá la función en muchas partes:
+
+```js
+function getProcessedData(url) {
+  return downloadData(url) // devuelve una promise
+    .catch(e => {
+      return downloadFallbackData(url)  // devuelve una promise
+    })
+    .then(v => {
+      return processDataInWorker(v); // devuelve una promise
+    });
+}
+```
+
+Este código se puede reescribir utilizando un solo operador `async` de esta manera:
+
+```js
+async function getProcessedData(url) {
+  let v;
+  try {
+    v = await downloadData(url); 
+  } catch(e) {
+    v = await downloadFallbackData(url);
+  }
+  return processDataInWorker(v);
+}
+```
+
 ## Fetch
 
 La `API Fetch` proporciona una interfaz para recuperar recursos (incluyendo recursos remotos a través de redes). Le resultará familiar a cualquiera que haya usado `XMLHttpRequest`, pero esta nueva API ofrece un conjunto de características más potente y flexible.

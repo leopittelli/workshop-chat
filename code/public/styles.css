@@ -99,7 +99,19 @@ body {
     color: inherit;
     transition: 0.3s ease;
 }
-
+.nav .default-nav .main-nav #upload-messages-icon {
+    display: none;
+    height: 32px;
+    width: 32px;
+    background: url(/public/icons/upload.svg);
+    background-size: contain;
+    margin: 16px;
+    position: absolute;
+    right: 0;
+}
+.nav .default-nav .main-nav #upload-messages-icon:hover {
+    cursor: pointer;
+}
 .bottom {
     position: fixed;
     bottom: 0;

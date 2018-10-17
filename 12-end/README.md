@@ -1,8 +1,11 @@
 # 12. Final
 
 ## Otras ideas
-WebRTC
+WebRTC P2P
 Más filtros de imagen, stickers, marcos.
+Push notifications
+Background sync
+Soporte Offline
 
 
 ## Referencias

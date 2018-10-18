@@ -1,6 +1,6 @@
 # 2. Explorando el proyecto 🔎
 
-Durante todo el workshop vamos a trabajar sobre un sitio web que es un chat de texto, agregando funcionalidad y aprovechando todo el poder de la web para hacerlo más interesante. En este módulo, vamos a recorrer la solución inicial para entender de qué se trata, como también que tecnologías utiliza.
+Durante todo el workshop vamos a trabajar sobre un sitio web que es un chat de texto, agregando funcionalidad y aprovechando todo el poder de la web para hacerlo más interesante. En este módulo, vamos a recorrer la solución inicial para entender de qué se trata y que tecnologías utiliza.
 
 ## Estructura del proyecto
 
@@ -79,7 +79,7 @@ Ahora, vamos a comenzar a revisar el proyecto mirando el código.
 
 1. Dentro de esa función, tenemos otros dos eventos importantes: ```message``` y ```close```.
 
-1. Cuando llega un mensaje, si es el primero de ese usuario, lo tomamos como su nombre. Sino, guardamos ese mensaje en la historia que manejamos en memoria y se lo reenviamos a todos los clientes conectados.
+1. Cuando llega un mensaje, si es el primero de ese usuario, lo tomamos como su nombre. Sino, guardamos ese mensaje en el historial que manejamos en memoria y se lo reenviamos a todos los clientes conectados.
     ```js
         connection.on('message', function(message) {
             // ...
@@ -98,17 +98,17 @@ Ahora, vamos a comenzar a revisar el proyecto mirando el código.
 
 1. Y una serie de archivos estáticos en la carpeta _public_:
     
-    - **icons**: Una serie de íconos svg que usaremos en nuestra UI. Tomados de [Material design](https://material.io/tools/icons).
+    - **icons**: Íconos svg que usaremos en nuestra UI. Tomados de [Material design](https://material.io/tools/icons).
     - **js**: Varios archivos JavaScript. Por el momento vacíos. Los iremos completando a medida que vayamos avanzando en el workshop. Idealmente, es un archivo por cada módulo. 
     - **styles**: Todos los estilos necesarios para nuestra aplicación.
 
 1. El archivo más interesante por el momento es: **chat-frontend.js** que maneja toda la lógica de conexión con el servidor. Recorramos su contenido deteniéndonos en los puntos más interesantes:
 
     1. Definimos el closure que encierra nuestro código (explicado en el módulo de conceptos).
-    ```js
-       const chat = (function () {
-    ```
-    
+        ```js
+           const chat = (function () {
+        ```
+
     1. Definimos algunas variables globales al módulo e inicializamos las referencias a los elementos del DOM que necesitaremos.
         ```js
            let connection;

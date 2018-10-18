@@ -10,7 +10,7 @@ A continuación, se explica cómo instalar alguna de ellas.
 
 ## Instalar Chrome última versión
 
-El workshop se basa en estándares web que para el momento de creación del mismo no estaban completamente implementadas en todos los browsers. Por eso, más la posibilidad de tener la misma experiencia en todos los sistemas operativos, agregamos como prerrequisito tener la última versión de Chrome instalada. Hay que aclarar que nada de lo que hagamos no impedirá que el sitio funcione en los browsers que no tengan soporte para alguna funcionalidad.
+El workshop se basa en estándares web que para el momento de creación del mismo no estaban completamente implementadas en todos los browsers. Por eso, más la posibilidad de tener la misma experiencia en todos los sistemas operativos, agregamos como prerrequisito tener la última versión de Chrome instalada.
 
 1. Navegar a [https://www.google.com/chrome/](https://www.google.com/chrome/) y descargar la versión correspondiente para tu plataforma.
 

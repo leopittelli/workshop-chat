@@ -8,6 +8,8 @@ En este caso, enviar archivos de audio. El funcionamiento será el siguiente:
 
 1. Hacer click en el botón de capturar audio para empezar a grabar.
 1. Aceptar los permisos de micrófono.
+1. Hablar.
+1. Volver a clickear el botón para finalizar.
 1. Aparecerá el audio como un nuevo mensaje.
 
 Por detrás, lo que haremos será:
@@ -23,13 +25,13 @@ _Demo UI_
 
 En el módulo anterior repasamos conceptos que utilizaremos en este módulo como websockets, closures, canvas.
 
-Nos quedan algunos más de los que todavía no hablamos y vamos a necesitar.
+Nos quedan algunos más de los que todavía no hablamos y que vamos a necesitar.
 
 ### getUserMedia
 
 El método `MediaDevices.getUserMedia()` solicita al usuario permisos para usar un dispositivo de entrada de video y/o uno de audio como una cámara o compartir la pantalla y/o micrófono.
 
-Si el usuario proporciona los permisos, entonces le retornará una `Promise` que es resuelta con el resultado del objeto `MediaStream`.
+Si el usuario proporciona los permisos, entonces nos retornará una `Promise` que es resuelta con el resultado del objeto `MediaStream`.
 
 Si el usuario niega el permiso, o si el recurso multimedia no es válido, entonces la promesa es rechazada con `PermissionDeniedError` o `NotFoundError` respectivamente.
 
@@ -175,7 +177,7 @@ function sendFile() {
 ### Visualizer
 Por último nos queda construir el visualizer. El código necesario para eso está a continuación. Agregarlo por debajo de la función `sendFile`:
 
-A partir del `stream` de audio, creamos un `Analyzer` y dibujamos, frame a frame un `path`en el `canvas`
+A partir del `stream` de audio, creamos un `Analyzer` y dibujamos, frame a frame un `path`en el `canvas`.
 
 ```js
 function visualize(stream) {

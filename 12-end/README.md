@@ -19,6 +19,7 @@ Algunas ideas:
 - Push notifications para los mensajes.
 - Background sync. Para reenviar los mensajes que quedaron en la base de datos al recuperar la conexión.
 - Soporte Offline. Hacer que todo el chat funcione offline y se deshabiliten las partes para las que no sea posible.
+- Más voces en Speech. Hacer uso de otras voces de la API de `SpeechSynthesis` y permitir elegirlas desde la UI. (El bonus track del módulo 6).
 
 ## Feedback
 Se agradece completar la [encuesta](https://goo.gl/forms/SKgULXu5JPILZ9rr1) anónima para transmitir feedback con el objetivo de mejorar el workshop.

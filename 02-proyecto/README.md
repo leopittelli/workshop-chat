@@ -1,4 +1,4 @@
-# 2. Entendiendo el proyecto 🔎
+# 2. Explorando el proyecto 🔎
 
 Durante todo el workshop vamos a trabajar sobre un sitio web que es un chat de texto, agregando funcionalidad y aprovechando todo el poder de la web para hacerlo más interesante. En este módulo, vamos a recorrer la solución inicial para entender de qué se trata, como también que tecnologías utiliza.
 

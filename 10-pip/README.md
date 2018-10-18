@@ -84,3 +84,6 @@ Probar el módulo es muy sencillo:
 1. Hacer click en el botón de PIP.
 1. Esperar que se abra en una ventana flotante y probar que, cambiando de pestaña y aplicación, podemos seguir viendo el video.
 
+
+## Próximo modulo
+Avanzar al [módulo 11 - Almacenamiento offline 📦](../11-offline-storage)

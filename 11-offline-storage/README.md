@@ -187,3 +187,6 @@ Para chequear si la base de datos y su contenido se crean correctamente podemos 
 ![IndexedDB](./images/indexeddb.png "IndexedDB")
 
 _IndexedDB_ 
+
+## Próximo modulo
+Avanzar al [módulo 12 - Final](../12-end)

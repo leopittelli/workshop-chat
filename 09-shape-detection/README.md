@@ -107,3 +107,6 @@ Probemos lo que acabamos de hacer. Es fácil:
 1. Hacer click en el botón de la cara.
 1. Esperar que se actualice la imagen con el recuadro.
 
+
+## Próximo modulo
+Avanzar al [módulo 10 - Picture-in-Picture (PIP) 📺](../10-pip)

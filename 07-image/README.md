@@ -215,3 +215,7 @@ return {
 Ahora toca probar lo que hicimos. Enviemos una imagen y veamos que aparece como un nuevo mensaje.
 
 ¿Esperabas otro bonus track? Los siguientes dos módulos completos son de bonus... 😏
+
+
+## Próximo modulo
+Avanzar al [módulo 8 - Aplicando filtros a la imagen 📸 -> 🌆 -> 🌇](../08-wasm)

@@ -231,4 +231,6 @@ function visualize(stream) {
 ## Listo!
 Ahora toca probar lo que hicimos. Enviemos un audio y probemos reproducirlo!
 
- 
+
+## Próximo modulo
+Avanzar al [módulo 5 - Speech recognition 🗣️️](../05-speech-recognition)

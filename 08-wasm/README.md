@@ -208,3 +208,5 @@ Ahora si! Es el momento de probar si toda esta magia anduvo!
 
 Clickeá en sacar una foto a ver si aparece el nuevo botón y aplica el filtro!
 
+## Próximo modulo
+Avanzar al [módulo 9 - Detectando caras en las fotos 🤦‍♀️ 🤦‍♂️](../09-shape-detection)

@@ -92,3 +92,5 @@ Haciendo uso de ese código, te invito a agregar un selector de voces en la UI y
 
 > Nota: No te olvides de cambiar la `voice` en el objeto `SpeechSynthesisUtterance` con: `utterThis.voice = selectedVoice` antes de pasárselo al `synth.speak`.
 
+## Próximo modulo
+Avanzar al [módulo 7 - Enviando imágenes 🤳️](../07-image)

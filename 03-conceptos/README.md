@@ -295,3 +295,6 @@ Podemos mostrar el contenido del gráfico como texto o una imagen de esa animaci
 Nuevamente, el soporte nativo en navegadores es afortunadamente, [muy bueno.](https://caniuse.com/#feat=canvas)
 
 Existen igualmente [Polyfills](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills#canvas) para casos en los que tengamos que dar soporte a browsers realmente muy viejos.
+
+## Próximo modulo
+Avanzar al [módulo 4 - Capturar audio 🎙️](../04-audio)

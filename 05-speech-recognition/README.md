@@ -107,3 +107,6 @@ startButton.onclick = function () {
 ## Listo!
 Ahora toca probar lo que hicimos. Enviemos un audio y veamos si el servicio lo transcribe correctamente!
 
+
+## Próximo modulo
+Avanzar al [módulo 6 - Speech synthesis 👂️](../06-speech-synthesis)

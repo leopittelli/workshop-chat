@@ -7,6 +7,8 @@ Todo en un navegador! Porque una PWA es mucho más que una web que puede recibir
 
 ## Módulos 📚
 
+Durante el workshop construiremos una aplicación de chat que funcione completamente en el navegador. Está dividido en módulos por funcionalidades, los módulos son:
+
 - [Configurando el ambiente ⚙️](./01-setup)
 - [Explorando el proyecto inicial 🔎](./02-proyecto)
 - [Conceptos principales 📜](./03-conceptos)
@@ -19,8 +21,6 @@ Todo en un navegador! Porque una PWA es mucho más que una web que puede recibir
 - [Picture-in-Picture (PIP) 📺](./10-pip)
 - [Almacenamiento offline 📦](./11-offline-storage)
 - [Final 🔚](./12-end)
-
-El workshop cuenta con los siguientes módulos:
 
 ### 1. [Configurando el ambiente ⚙](./01-setup)
 En este módulo se verá cuáles son las herramientas necesarias para poder desarrollar con estas tecnologías.
@@ -47,7 +47,7 @@ En este módulo enviaremos fotos como mensajes del chat.
 En este filtro aplicaremos un filtro en la imagen usando `WebAssembly`.
 
 ### 9. [Detectando caras en las fotos 🤦‍♀️ 🤦‍♂️](./09-shape-detection)
-En este módulo haremos detección de caras sobre las imágenes
+En este módulo haremos detección de caras sobre las imágenes.
 
 ### 10. [Picture-in-Picture (PIP) 📺](./10-pip)
 En este módulo usaremos la API de `PIP` para reproducir videos flotantes.

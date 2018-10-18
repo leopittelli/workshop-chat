@@ -1,7 +1,7 @@
 # 3. Conceptos principales 📜
 _Progressive Web App_ hace referencia a un conjunto de herramientas y buenas prácticas, algunas de ellas ya conocidas hace mucho y otras mucho más nuevas. 
 
-Esas herramientas y buenas prácticas apuntan a que la web se comporte cada vez más parecida a una aplciación nativa. Tanto desde el comportamiento como desde las funcionalidades que nos permite desarrollar.
+Esas herramientas y buenas prácticas apuntan a que la web se comporte cada vez más parecida a una aplicación nativa. Tanto desde el comportamiento como desde las funcionalidades que nos permite desarrollar.
 
 En este módulo veremos algunas de las herramientas y buenas prácticas que usaremos a lo largo del workshop. Otras las iremos introduciendo a medida que las vayamos necesitando.
 
@@ -45,7 +45,7 @@ Un closure es la combinación de una función y el ámbito en el que se declaró
 
 A lo largo del workshop, usaremos _closures_ para poder separar el código en módulos que no interfieran unos con otros.
 
-Definiremos una función que actúa como contenedor para un contexto de ejecución. Esto quiere decir que en su interior, se declaran una serie de variables y funciones que solo son visibles desde dentro del mismo.
+Definiremos una función que actúa como contenedor para un contexto de ejecución. Esto quiere decir que, en su interior, se declaran una serie de variables y funciones que solo son visibles desde dentro del mismo.
 
 ```js
 // Namespace para la librería
@@ -88,7 +88,7 @@ Si un error es lanzado en la función ejecutor, la promesa es rechazada y el val
 
 La finalidad de las funciones `async/await` es simplificar el comportamiento del uso síncrono de `Promises` y realizar algún comportamiento específico en un grupo de `Promises`.
 
-Cuando se llama a una función `async`, esta devuelve un elemento `Promise`. Una función `async` puede contener una expresión `await`, la cual pausa la ejecución de la función asíncrona y espera la resolución de la `Promise` pasada y, a continuación, reanuda la ejecución de la función `async` y devuelve el valor resuelto.
+Cuando se llama a una función `async`, ésta devuelve un elemento `Promise`. Una función `async` puede contener una expresión `await`, la cual pausa la ejecución de la función asíncrona y espera la resolución de la `Promise` pasada y, a continuación, reanuda la ejecución de la función `async` y devuelve el valor resuelto.
 
 ### Ejemplo
 
@@ -126,9 +126,23 @@ La `API Fetch` proporciona una interfaz para recuperar recursos (incluyendo recu
 
 `Fetch` ofrece una definición genérica de los objetos `Request` y `Response`.
 
+### Ejemplo
+
+```js
+fetch('http://example.com/movies.json')
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(myJson) {
+    console.log(JSON.stringify(myJson));
+  });
+```
+
+En este caso, obtenemos un archivo JSON desde internet y lo imprimimos en la consola. El uso más simple de `fetch()` recibe un parámetro que es la ruta del recurso a obtener y devuelve una promesa conteniendo la respuesta (un objeto de tipo `Response`).
+
 ## WebSockets
 
-WebSockets es una tecnología que permite abrir una sesión de comunicación interactiva entre el navegador del usuario y un servidor. Con esta  API, podemos enviar mensajes a un servidor y recibir respuestas controladas por eventos sin tener que consultar al servidor para una respuesta.
+WebSockets es una tecnología que permite abrir una sesión de comunicación interactiva entre el navegador del usuario y un servidor. Con esta  API, podemos enviar mensajes a un servidor y recibir respuestas controladas por eventos sin tener que consultar al servidor todo el tiempo para saber si hay mensajes nuevos.
 
 Nuestro chat va a hacer uso de WebSockets para recibir y enviar mensajes desde y hacia el servidor.
 
@@ -145,7 +159,7 @@ Eso facilita su integración y es el motivo por el cual no usaremos ningún poly
 
 
 ## Canvas
-Añadido en HTML5, el tag `<canvas>` se puede usar para dibujar gráficos mediante JavaScript. Por ejemplo, se puede usar para hacer gráficos, composiciones fotográficas, crear animaciones, o incluso procesado o renderizado de vídeo en tiempo real.
+Añadido en HTML5, el tag `<canvas>` se puede usar para dibujar gráficos mediante JavaScript. Por ejemplo, se puede usar para hacer gráficos, composiciones fotográficas, crear animaciones, o incluso procesado o renderizado de video en tiempo real.
 
 Durante el workshop vamos a usarlo para procesar imágenes y audio, por eso es importante entender su funcionamiento básico.
 
@@ -182,7 +196,7 @@ var ctx = canvas.getContext('2d');
 #### Dibujando
 Como decíamos, el canvas comienza vacío. Es nuestro lienzo listo para dibujar. Para eso, el `rendering context` nos brinda un conjunto de herramientas. 
 
-[Acá](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D) se pueden ver todos los métodos disponibles en CanvasRenderingContext2D.
+[Acá](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D) se pueden ver todos los métodos disponibles en `CanvasRenderingContext2D`.
 
 A continuación detallamos algunas de las que vamos a usar durante el workshop:
 
@@ -251,7 +265,7 @@ ctx.putImageData(imageData, 0, 0);
 
 ##### rect
 
-Crea una ruta para un rectángulo en la posición _(x, y)_ con el tamaño determinado por width y height. Esos cuatro ountos se conectan por líneas rectas y esa ruta se marca como cerrada, lo que permite dibujar el borde o rellenar su interior.
+Crea una ruta para un rectángulo en la posición _(x, y)_ con el tamaño determinado por width y height. Esos cuatro puntos se conectan por líneas rectas y esa ruta se marca como cerrada, lo que permite dibujar el borde o rellenar su interior.
 
 ```js
 ctx.rect(10, 10, 100, 100);
@@ -268,10 +282,10 @@ Nos permite obtener una DataURI que representa la imagen del contenido del canva
 canvas.toDataURL(type, options);
 ```
 
-Las 2 opciones son opcionales.
+Los 2 argumentos son opcionales.
 
 
-### Progressive enhancement
+### Progressive enhancement para `canvas`
 Si bien el soporte en navegadores es bueno, como decíamos antes, nunca está de más asegurarnos de que todos puedan tener acceso a nuestra funcionalidad.
 
 Generar un fallback es muy sencillo: simplemente insertar contenido dentro del elemento `<canvas>`.
@@ -279,7 +293,7 @@ Generar un fallback es muy sencillo: simplemente insertar contenido dentro del e
 Los browsers que no lo soporten, ignorarán el tag y mostrarán el fallback del interior. Los que sí lo soporten harán de cuenta como que ese contenido no existe.
 
 ##### Ejemplo
-Podemos mostrar el contenido del gráfico como texto o una imagen de esa animación que el usuario no podrá ver.
+Podemos mostrar el contenido de un gráfico como texto o una animación que el usuario no podrá ver como una imagen fija.
 
 ```html
 <canvas id="stockGraph" width="150" height="150">

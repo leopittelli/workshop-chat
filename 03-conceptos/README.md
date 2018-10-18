@@ -1,4 +1,4 @@
-# Conceptos principales 📜
+# 3. Conceptos principales 📜
 _Progressive Web App_ hace referencia a un conjunto de herramientas y buenas prácticas, algunas de ellas ya conocidas hace mucho y otras mucho más nuevas. 
 
 Esas herramientas y buenas prácticas apuntan a que la web se comporte cada vez más parecida a una aplciación nativa. Tanto desde el comportamiento como desde las funcionalidades que nos permite desarrollar.

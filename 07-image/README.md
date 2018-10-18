@@ -1,4 +1,4 @@
-# Enviando imágenes 🤳
+# 7. Enviando imágenes 🤳
 
 Ya tenemos mensajes de texto, mensajes de audio y varias funcionalidades relacionadas. Necesitamos selfies!
 

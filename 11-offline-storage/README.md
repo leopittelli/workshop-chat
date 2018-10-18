@@ -1,4 +1,4 @@
-# Almacenamiento offline 📦
+# 11. Almacenamiento offline 📦
 
 ¿Qué pasaría si intentáramos enviar un mensaje y no tuviéramos conexión (o el server hubiese dejado de funcionar)?
 

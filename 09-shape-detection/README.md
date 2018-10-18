@@ -1,4 +1,4 @@
-# Detectando caras en las fotos 🤦‍♀️ 🤦‍♂️
+# 9. Detectando caras en las fotos 🤦‍♀️ 🤦‍♂️
 
 Para esta altura, puede que hayas notado que al lado de cada mensaje de tipo imagen aparece un botón con un cara.
 

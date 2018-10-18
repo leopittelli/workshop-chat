@@ -1,4 +1,4 @@
-# Speech synthesis 👂
+# 6. Speech synthesis 👂
 
 Hace un rato que venimos enviando mensajes y, al lado de cada uno, aparece un ícono del que todavía no hemos hablado.
 

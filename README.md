@@ -1,7 +1,7 @@
 # Workshop. The web beyond PWAs.
 Hace ya algunos años que nació el término Progressive Web Apps. En tiempos de la web actual, eso es una eternidad.
 
-En este workshop vamos a armar una aplicación completa, aprovechando varias de las nuevas funcionalidades que la nueva web ahora nos permite implementar. WebSockets, Audio, Video, bases de datos, algo de machine learning (porque no puede faltar) y algunas sorpresas más!
+En este workshop vamos a armar una aplicación completa, aprovechando varias de las nuevas funcionalidades que la web ahora nos permite implementar. WebSockets, Audio, Video, bases de datos, algo de machine learning (porque no puede faltar) y algunas sorpresas más!
 
 Todo en un navegador! Porque una PWA es mucho más que una web que puede recibir notificaciones push, y es nuestra tarea aprovechar y hacer crecer esos estándares.
 
@@ -67,4 +67,4 @@ Una vez terminado el workshop, se agradece completar la encuesta para poder mejo
 - **Twitter:** [@leopittelli](https://twitter.com/leopittelli)
 
 ## Empecemos! 🏁
-Avanzar al módulo 1 - Configurando el ambiente ⚙
+Avanzar al [módulo 1 - Configurando el ambiente ⚙](./01-setup)

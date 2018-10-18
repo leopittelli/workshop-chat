@@ -1,4 +1,4 @@
-# Aplicando filtros a la imagen 📸 -> 🌆 -> 🌇
+# 8. Aplicando filtros a la imagen 📸 -> 🌆 -> 🌇
 
 Es el turno del primero de los bonus track de la captura de imágenes.
 

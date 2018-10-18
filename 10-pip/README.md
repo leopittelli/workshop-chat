@@ -1,4 +1,4 @@
-# Picture-in-Picture (PIP) 📺
+# 10. Picture-in-Picture (PIP) 📺
 
 Ya tenemos audio, imagen, nos falta video. Pero en este caso no vamos a subir un video nuestro sino usar uno ya creado para embeberlo y poder reproducirlo de manera flotante por sobre todas las ventanas del sistema operativo. En otras palabras: picture in picture:
 
